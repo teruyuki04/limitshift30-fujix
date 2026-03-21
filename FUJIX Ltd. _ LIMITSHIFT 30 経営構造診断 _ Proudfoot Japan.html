@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/USER/Downloads/fujix_lp_4.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUJIX Ltd. | LIMITSHIFT 30 経営構造診断 | Proudfoot Japan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./FUJIX Ltd. _ LIMITSHIFT 30 経営構造診断 _ Proudfoot Japan_files/css2" rel="stylesheet">
+
+<style>
+  :root {
+    --white: #f9f7f2;
+    --navy: #1a2640;
+    --navy-mid: #243450;
+    --gold: #a07820;
+    --gold-light: #c9a24a;
+    --gold-pale: #f0e8d0;
+    --beige: #f4f0e8;
+    --text-dark: #1a2640;
+    --text-mid: #4a4744;
+    --text-light: #7a7570;
+    --border: rgba(160,120,32,0.25);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Serif JP', serif;
+    background: var(--white);
+    color: var(--text-dark);
+    font-size: 15px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* ── Progress Bar ── */
+  #progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    width: 0%;
+    z-index: 1000;
+    transition: width 0.1s linear;
+  }
+
+  /* ── Nav ── */
+  nav {
+    position: fixed;
+    top: 2px; left: 0; right: 0;
+    z-index: 900;
+    background: rgba(249,247,242,0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .nav-brand {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--navy);
+    text-transform: uppercase;
+  }
+
+  .nav-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+  }
+
+  .nav-sub {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: var(--text-mid);
+  }
+
+  .nav-cta {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 7px 16px;
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold);
+    color: var(--white);
+  }
+
+  /* ── Hero ── */
+  #hero {
+    padding-top: 60px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-left {
+    background: var(--white);
+    padding: 80px 60px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero-left::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 80px; right: 60px;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+
+  .hero-company {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 20px;
+  }
+
+  .hero-h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(22px, 2.8vw, 34px);
+    font-weight: 500;
+    line-height: 1.55;
+    color: var(--navy);
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-sub {
+    font-size: 13.5px;
+    line-height: 1.9;
+    color: var(--text-mid);
+    margin-bottom: 40px;
+    max-width: 440px;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .meta-item {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    display: flex;
+    gap: 12px;
+  }
+
+  .meta-label {
+    color: var(--gold);
+    min-width: 80px;
+  }
+
+  .hero-right {
+    background: var(--navy);
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .toc-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 32px;
+    opacity: 0.8;
+  }
+
+  .toc-list {
+    list-style: none;
+    margin-bottom: 56px;
+  }
+
+  .toc-list li {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 16px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .toc-list li:last-child {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .toc-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    color: var(--gold-light);
+    opacity: 0.7;
+    min-width: 24px;
+  }
+
+  .toc-text {
+    font-size: 13px;
+    color: rgba(249,247,242,0.75);
+    letter-spacing: 0.03em;
+  }
+
+  .hero-cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 16px 28px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: background 0.25s;
+    text-align: center;
+  }
+
+  .hero-cta-btn:hover { background: var(--gold-light); }
+
+  .hero-cta-sub {
+    font-size: 12px;
+    color: rgba(249,247,242,0.6);
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── Section Commons ── */
+  section { padding: 100px 0; }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    margin-bottom: 48px;
+  }
+
+  /* ── Section 01 ── */
+  #section01 { background: var(--white); }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 56px;
+  }
+
+  .metric-card {
+    background: var(--white);
+    padding: 36px 40px;
+    position: relative;
+  }
+
+  .metric-card.highlight {
+    background: var(--navy);
+  }
+
+  .metric-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 12px;
+  }
+
+  .metric-card.highlight .metric-label {
+    color: rgba(249,247,242,0.5);
+  }
+
+  .metric-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+
+  .metric-card.highlight .metric-value {
+    color: var(--gold-light);
+  }
+
+  .metric-desc {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+
+  .metric-card.highlight .metric-desc {
+    color: rgba(249,247,242,0.6);
+  }
+
+  .section01-lead {
+    max-width: 680px;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-mid);
+    border-left: 2px solid var(--gold);
+    padding-left: 28px;
+  }
+
+  /* ── Section 02 ── */
+  #section02 { background: var(--navy); }
+
+  #section02 .section-label { color: var(--gold-light); opacity: 0.8; }
+  #section02 .section-title { color: var(--white); }
+
+  .questions-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .q-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 44px 48px;
+    transition: background 0.3s;
+  }
+
+  .q-card:hover { background: rgba(255,255,255,0.07); }
+
+  .q-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid rgba(160,120,32,0.4);
+    padding: 4px 10px;
+  }
+
+  .q-title {
+    font-size: clamp(16px, 1.8vw, 20px);
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  .q-body {
+    font-size: 13.5px;
+    color: rgba(249,247,242,0.65);
+    line-height: 1.95;
+    max-width: 680px;
+  }
+
+  .q-body .offtrack {
+    color: rgba(249,247,242,0.6);
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 16px;
+    display: block;
+  }
+
+  .lock-box {
+    margin-top: 28px;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(160,120,32,0.25);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .lock-text {
+    font-size: 13px;
+    color: rgba(249,247,242,0.6);
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  .lock-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--gold-light);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(160,120,32,0.4);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+
+  .lock-link:hover { color: var(--gold-pale); }
+
+  .q-title-dim {
+    font-size: clamp(15px, 1.6vw, 18px);
+    font-weight: 400;
+    color: rgba(249,247,242,0.3);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── Section 03 ── */
+  #section03 { background: var(--beige); }
+
+  .premise-quote {
+    border-left: 3px solid var(--gold);
+    padding: 28px 36px;
+    background: rgba(160,120,32,0.06);
+    margin-bottom: 56px;
+  }
+
+  .premise-quote p {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-dark);
+  }
+
+  .premise-note {
+    font-size: 12px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 12px;
+    display: block;
+  }
+
+  .structure-diagram {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 56px;
+    border: 1px solid var(--border);
+    background: var(--white);
+  }
+
+  .diag-node {
+    padding: 32px 28px;
+    text-align: center;
+  }
+
+  .diag-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .diag-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .diag-text {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  .diag-arrow {
+    font-size: 18px;
+    color: var(--gold);
+    opacity: 0.5;
+    padding: 0 8px;
+  }
+
+  .section03-lead {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-mid);
+    max-width: 680px;
+  }
+
+  /* ── Section 04 ── */
+  #section04 { background: var(--white); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .contact-left h2 {
+    font-size: clamp(20px, 2.2vw, 26px);
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--navy);
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .contact-lead {
+    font-size: 13.5px;
+    line-height: 2;
+    color: var(--text-mid);
+    margin-bottom: 36px;
+  }
+
+  .contact-bullets {
+    list-style: none;
+    margin-bottom: 40px;
+  }
+
+  .contact-bullets li {
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-mid);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    line-height: 1.7;
+  }
+
+  .contact-bullets li:last-child { border-bottom: 1px solid var(--border); }
+
+  .bullet-mark {
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    min-width: 16px;
+  }
+
+  .info-box {
+    background: var(--beige);
+    border: 1px solid var(--border);
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .info-row {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    color: var(--text-mid);
+  }
+
+  .info-key {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    min-width: 64px;
+    padding-top: 2px;
+  }
+
+  .contact-right {
+    background: var(--navy);
+    padding: 48px 44px;
+  }
+
+  .form-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 32px;
+    opacity: 0.8;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(249,247,242,0.75);
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--white);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: rgba(160,120,32,0.6);
+  }
+
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: rgba(249,247,242,0.3);
+    font-size: 13px;
+  }
+
+  .form-textarea { resize: vertical; min-height: 80px; }
+
+  .form-check-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -4px;
+    margin-bottom: 20px;
+  }
+
+  .form-check-row input[type="checkbox"] {
+    accent-color: var(--gold);
+    width: 14px;
+    height: 14px;
+  }
+
+  .form-check-row label {
+    font-size: 13px;
+    color: rgba(249,247,242,0.7);
+    cursor: pointer;
+  }
+
+  .form-submit {
+    width: 100%;
+    background: var(--gold);
+    color: var(--white);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    transition: background 0.25s;
+    margin-top: 8px;
+  }
+
+  .form-submit:hover { background: var(--gold-light); }
+
+  .form-note {
+    font-size: 12px;
+    color: rgba(249,247,242,0.5);
+    text-align: center;
+    margin-top: 16px;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  /* ── Overlay ── */
+  #success-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26,38,64,0.92);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #success-overlay.active { display: flex; }
+
+  .overlay-box {
+    background: var(--white);
+    padding: 60px;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .overlay-box h3 {
+    font-size: 20px;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .overlay-box p {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.9;
+    margin-bottom: 28px;
+  }
+
+  .overlay-close {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+
+  .overlay-close:hover { background: var(--gold); color: var(--white); }
+
+  /* ── Footer ── */
+  footer {
+    background: var(--navy);
+    padding: 36px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: rgba(249,247,242,0.65);
+  }
+
+  .footer-right {
+    font-size: 12px;
+    color: rgba(249,247,242,0.55);
+    text-align: right;
+    line-height: 1.6;
+  }
+
+  /* ── Fade-in ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    #hero { grid-template-columns: 1fr; }
+    .hero-right { min-height: auto; padding: 60px 40px; }
+    .hero-left { padding: 80px 40px 60px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .metrics-grid { grid-template-columns: 1fr; }
+    .structure-diagram { grid-template-columns: 1fr; }
+    .diag-arrow { transform: rotate(90deg); padding: 8px 0; }
+    nav { padding: 0 20px; }
+    .section-inner { padding: 0 32px; }
+    footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px; }
+    .footer-right { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-left">
+    <span class="nav-brand">Proudfoot Japan</span>
+    <div class="nav-divider"></div>
+    <span class="nav-sub">株式会社フジックス｜経営構造診断レポート</span>
+  </div>
+  <a href="file:///C:/Users/USER/Downloads/fujix_lp_4.html#section04" class="nav-cta">対話を申し込む</a>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-left fade-in visible">
+    <div class="kicker">LIMITSHIFT 30 ── 経営構造診断</div>
+    <div class="hero-company">FUJIX Ltd.</div>
+    <h1 class="hero-h1">「縫い糸の会社」という定義は、<br>今後も有効であり続けるのか。</h1>
+    <p class="hero-sub">
+      御社の中計を拝読し、外部から一つの問いが生まれました。それが正しいのか、的外れなのか――確かめるためにこのページを書きました。
+    </p>
+    <div class="meta-row">
+      <div class="meta-item"><span class="meta-label">対象企業</span>株式会社フジックス（3600・東証スタンダード）</div>
+      <div class="meta-item"><span class="meta-label">診断基準日</span>2025年3月期（第76期）有価証券報告書</div>
+      <div class="meta-item"><span class="meta-label">根拠資料</span>有報・適時開示・Go-Tech事業成果報告書</div>
+    </div>
+  </div>
+  <div class="hero-right fade-in visible">
+    <div class="toc-label">Page Contents</div>
+    <ul class="toc-list">
+      <li><span class="toc-num">01</span><span class="toc-text">外部から見えた数値と、そこから生まれた問い</span></li>
+      <li><span class="toc-num">02</span><span class="toc-text">外部から見えた3つの問い</span></li>
+      <li><span class="toc-num">03</span><span class="toc-text">3つの問いに共通して見えていること</span></li>
+      <li><span class="toc-num">04</span><span class="toc-text">30分の対話を申し込む</span></li>
+    </ul>
+    <a href="file:///C:/Users/USER/Downloads/fujix_lp_4.html#section04" class="hero-cta-btn">問いが的外れかどうかを、確かめたい →</a>
+    <p class="hero-cta-sub">「違います」という答えも、大切な対話です</p>
+  </div>
+</section>
+
+<!-- Section 01 -->
+<section id="section01">
+  <div class="section-inner">
+    <div class="section-label fade-in">Section 01</div>
+    <h2 class="section-title fade-in">外部から見えた数値と、そこから生まれた問い</h2>
+
+    <div class="metrics-grid fade-in">
+      <div class="metric-card">
+        <div class="metric-label">売上高（2025/3期）</div>
+        <div class="metric-value">56.5<span style="font-size:0.45em;margin-left:4px;">億円</span></div>
+        <div class="metric-desc">10年CAGRで▲1.74%の減収トレンド継続。市場縮小と並走する構造。</div>
+      </div>
+      <div class="metric-card highlight">
+        <div class="metric-label">経常損失（2025/3期）</div>
+        <div class="metric-value">▲1億<span style="font-size:0.45em;margin-left:4px;">円</span></div>
+        <div class="metric-desc">4期連続赤字。アジア・国内両セグメントともに黒字化が見えない状況が続いている。</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">PBR</div>
+        <div class="metric-value">0.24<span style="font-size:0.45em;margin-left:4px;">倍</span></div>
+        <div class="metric-desc">解散価値の約4分の1。繊維業界平均（0.5〜0.8倍）を大幅に下回り、市場は純資産の活用に疑問を持っている。</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">期末現金残高（2025/3期）</div>
+        <div class="metric-value">17.8<span style="font-size:0.45em;margin-left:4px;">億円</span></div>
+        <div class="metric-desc">唯一の軍資金。一方でアジア向け設備投資は2023年の5,900万円から2025年には190万円まで圧縮済み。</div>
+      </div>
+    </div>
+
+    <p class="section01-lead fade-in">
+      公開されている数値を並べたとき、一つの問いが生まれました。<br>
+      17.8億円という現金は、「守るためにある」のか、それとも「次の定義を作るためにある」のか。アジア向けの設備投資が190万円まで絞られたこの数字は、何を語っているのでしょうか。外部からはわかりません。でも、問いとして持ち続けています。
+    </p>
+  </div>
+</section>
+
+<!-- Section 02 -->
+<section id="section02">
+  <div class="section-inner">
+    <div class="section-label fade-in">Section 02</div>
+    <h2 class="section-title fade-in">外部から見えた3つの問い</h2>
+
+    <div class="questions-stack">
+
+      <!-- Q1: 全文開示 -->
+      <div class="q-card fade-in">
+        <div class="q-tag">問い 01 ── 外部からの仮説</div>
+        <div class="q-title">
+          「縫い糸を縫製業者に売る」という事業の定義は、<br>今後も有効であり続けるのか。
+        </div>
+        <div class="q-body">
+          中計には「アジアでのシェア拡大」という方向が示されています。それは外部から見ても大切な方向だと理解しています。同時に、外部から一つの問いが浮かびます。Coatsのような世界大手が「品質・価格・調達利便性」という同じ三軸で戦っている市場で、フジックスが構造的に優位に立てる条件は何か――という問いです。<br><br>
+          フジックスには、2017年から国の補助金を活用して開発してきた導電性縫い糸「Smart-X」があります。心電計測の実証まで済ませ、特許も出願している。「縫い糸を縫製業者に売る」ではなく、「Smart-Xを医療・介護・産業安全の素材インフラとして売る」という別の定義が、既に手の届く場所にあるのではないかと感じています。
+          <span class="offtrack">これが的外れであれば、ぜひそう教えてください。その答えも、私たちにとっては大切な対話です。</span>
+        </div>
+      </div>
+
+      <!-- Q2: 概要のみ -->
+      <div class="q-card fade-in">
+        <div class="q-tag">問い 02 ── 概要のみ</div>
+        <div class="q-title">Smart-Xの「死の谷」は、技術の問題か、それとも定義の問題か。</div>
+        <div class="q-body">
+          確かめたい問いがあります。技術的な実証は完了しているのに、2024年末時点でも「提携先模索中」の状態が続いているのはなぜか。技術の壁ではなく、「誰に・何として売るか」の定義が未着手のままである可能性を、外部からは感じています。
+        </div>
+        <div class="lock-box">
+          <span class="lock-text">この問いの詳細と、私たちが考える具体的な3つの前提倒置仮説は、対話の中でお伝えできればと思います。</span>
+          <a href="file:///C:/Users/USER/Downloads/fujix_lp_4.html#section04" class="lock-link">対話の中で確かめる →</a>
+        </div>
+      </div>
+
+      <!-- Q3: 存在のみ -->
+      <div class="q-card fade-in">
+        <div class="q-tag">問い 03 ── 対話の中で</div>
+        <div class="q-title-dim">「縫い糸専業」という自己定義は、事業の拡張を助けているのか、それとも制限しているのか。</div>
+        <div class="lock-box">
+          <span class="lock-text">外部から見えた中で、最も確信が持てないが、最も気になっている問いです。間違っている可能性も十分あります。それでも一度、対話の中で確かめさせてください。</span>
+          <a href="file:///C:/Users/USER/Downloads/fujix_lp_4.html#section04" class="lock-link">対話を申し込む →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section 03 -->
+<section id="section03">
+  <div class="section-inner">
+    <div class="section-label fade-in">Section 03</div>
+    <h2 class="section-title fade-in">3つの問いに共通して見えていること</h2>
+
+    <div class="premise-quote fade-in">
+      <p>
+        有報の対策群を通読したとき、外部からはこう見えています――「既存の製品・既存の拠点・既存の営業チャネルの範囲内で競争力を磨けば、アジアでのシェアは自然に上がる」という前提のもとで、全ての対策が設計されている。「縫い糸という製品カテゴリーそのものの定義」と「現在の顧客ターゲット」が、疑われることなく前提として置かれている。
+      </p>
+      <span class="premise-note">※ これはあくまで外部からの仮説です。内側からしか見えないことの方が、はるかに多いはずです。</span>
+    </div>
+
+    <div class="structure-diagram fade-in">
+      <div class="diag-node">
+        <span class="diag-num">01</span>
+        <span class="diag-label">現状の対策</span>
+        <div class="diag-text">新規販路開拓・拠点合理化・環境対応製品研究。守り中心の6つの対策。</div>
+      </div>
+      <div class="diag-arrow">→</div>
+      <div class="diag-node">
+        <span class="diag-num">02</span>
+        <span class="diag-label">対策が前提とする世界観</span>
+        <div class="diag-text">「縫い糸×縫製業者」という既存の市場定義の中で磨けば、シェアは上がる。</div>
+      </div>
+      <div class="diag-arrow">→</div>
+      <div class="diag-node">
+        <span class="diag-num">03</span>
+        <span class="diag-label">前提が変わった場合の問い</span>
+        <div class="diag-text">縫製業者以外の顧客・縫い糸以外の価値定義が、既に手の届く場所にあるとしたら？</div>
+      </div>
+    </div>
+
+    <p class="section03-lead fade-in">
+      私たちが確かめたいのは、フジックスの戦略が間違っているかどうかではありません。御社が既にお持ちの問いと、私たちが外部から持ってきた問いが重なるところがあるかどうか――それだけです。答えを持っているのは御社だけです。
+    </p>
+  </div>
+</section>
+
+<!-- Section 04 -->
+<section id="section04">
+  <div class="section-inner">
+    <div class="section-label fade-in">Section 04</div>
+    <div class="contact-grid">
+      <div class="contact-left fade-in">
+        <h2>問いが的外れかどうかを、<br>教えてください</h2>
+        <p class="contact-lead">
+          このページに書いたことは、外部公開情報だけから見えたものです。内側からしか見えないことの方が、はるかに多いはずです。「的外れです」という答えも、私たちにとっては大切な対話です。
+        </p>
+        <ul class="contact-bullets">
+          <li><span class="bullet-mark">—</span>問い02の詳細と、Smart-Xを起点にした3つの前提倒置仮説</li>
+          <li><span class="bullet-mark">—</span>問い03の正直な開示と、「縫い糸専業」という定義を疑う視点</li>
+          <li><span class="bullet-mark">—</span>御社が既にお持ちかもしれない問いとの重なりを探る時間</li>
+        </ul>
+        <div class="info-box">
+          <div class="info-row"><span class="info-key">所要時間</span>30分（オンライン）</div>
+          <div class="info-row"><span class="info-key">形式</span>Zoom / Google Meet（ご希望に合わせます）</div>
+          <div class="info-row"><span class="info-key">費用</span>無料</div>
+        </div>
+      </div>
+
+      <div class="contact-right fade-in">
+        <div class="form-title">対話の申し込み</div>
+        <form id="contact-form" action="https://formspree.io/f/mjgalvdz" method="POST">
+          <div class="form-group">
+            <label class="form-label">お名前 <span style="color:var(--gold-light)">*</span></label>
+            <input type="text" name="name" class="form-input" placeholder="藤井 翔太" required="">
+          </div>
+          <div class="form-group">
+            <label class="form-label">メールアドレス <span style="color:var(--gold-light)">*</span></label>
+            <input type="email" name="email" class="form-input" placeholder="your@fujix.co.jp" required="">
+          </div>
+          <div class="form-group">
+            <label class="form-label">候補日① <span style="color:var(--gold-light)">*</span></label>
+            <input type="text" name="date1" class="form-input" placeholder="例）2025年8月5日（火）10:00〜" required="">
+          </div>
+          <div class="form-group">
+            <label class="form-label">候補日②</label>
+            <input type="text" name="date2" class="form-input" placeholder="例）2025年8月7日（木）15:00〜">
+          </div>
+          <div class="form-group">
+            <label class="form-label">候補日③</label>
+            <input type="text" name="date3" class="form-input" placeholder="例）2025年8月8日（金）14:00〜">
+          </div>
+          <div class="form-check-row">
+            <input type="checkbox" id="email-adjust" name="email_adjust" value="はい">
+            <label for="email-adjust">メールで日程を調整したい</label>
+          </div>
+          <div class="form-group">
+            <label class="form-label">事前コメント（任意）</label>
+            <textarea name="comment" class="form-textarea" placeholder="問いへのご感想や、既にお持ちの問いがあればお聞かせください"></textarea>
+          </div>
+          <button type="submit" class="form-submit">対話を申し込む →</button>
+          <p class="form-note">売り込みではありません。私たちの問いが的外れなら、そう言っていただければ十分です</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-left">Proudfoot Japan ── LIMITSHIFT 30</div>
+  <div class="footer-right">本ページは 株式会社フジックス<br>常務取締役 藤井翔太 様専用の資料です</div>
+</footer>
+
+<!-- Success Overlay -->
+<div id="success-overlay">
+  <div class="overlay-box">
+    <h3>対話のお申し込みを受け付けました</h3>
+    <p>ご連絡をありがとうございます。<br>Proudfoot Japanの担当者より、2営業日以内にご連絡差し上げます。</p>
+    <button class="overlay-close" onclick="document.getElementById(&#39;success-overlay&#39;).classList.remove(&#39;active&#39;)">閉じる</button>
+  </div>
+</div>
+
+<script>
+  // Progress Bar
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById('progress-bar').style.width = progress + '%';
+  });
+
+  // Fade-in Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Form AJAX
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        document.getElementById('success-overlay').classList.add('active');
+        form.reset();
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  });
+</script>
+
+
+</body></html>
