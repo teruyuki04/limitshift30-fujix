@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///C:/Users/USER/Downloads/fujix_lp_v2.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUJIX Ltd. | LIMITSHIFT 30 経営構造診断 | Proudfoot Japan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./FUJIX Ltd. _ LIMITSHIFT 30 経営構造診断 _ Proudfoot Japan_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --white: #f9f7f2;
+    --navy: #1a2640;
+    --gold: #a07820;
+    --gold-light: #c9a24a;
+    --gold-pale: #f0e8d0;
+    --beige: #f4f0e8;
+    --red: #8c2010;
+    --red-bg: #f3e8e4;
+    --text-dark: #1a2640;
+    --text-mid: #4a4744;
+    --text-light: #7a7570;
+    --border: rgba(160,120,32,0.25);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Noto Serif JP',serif; background:var(--white); color:var(--text-dark); font-size:15px; line-height:1.85; overflow-x:hidden; }
+
+  /* Progress */
+  #progress-bar { position:fixed; top:0; left:0; height:2px; background:linear-gradient(90deg,var(--gold),var(--gold-light)); width:0%; z-index:1000; transition:width .1s linear; }
+
+  /* Nav */
+  nav { position:fixed; top:2px; left:0; right:0; z-index:900; background:rgba(249,247,242,.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--border); padding:0 48px; height:62px; display:flex; align-items:center; justify-content:space-between; }
+  .nav-left { display:flex; align-items:center; gap:16px; }
+  .nav-brand { font-family:'DM Mono',monospace; font-size:12px; font-weight:500; letter-spacing:.12em; color:var(--navy); text-transform:uppercase; }
+  .nav-div { width:1px; height:20px; background:var(--border); }
+  .nav-sub { font-family:'DM Mono',monospace; font-size:12px; font-weight:300; letter-spacing:.07em; color:var(--text-mid); }
+  .nav-cta { font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); border:1px solid var(--gold); padding:8px 18px; text-decoration:none; transition:all .25s; }
+  .nav-cta:hover { background:var(--gold); color:var(--white); }
+
+  /* Hero */
+  #hero { padding-top:62px; min-height:100vh; display:grid; grid-template-columns:1fr 1fr; }
+  .hero-left { background:var(--white); padding:80px 60px 80px 80px; display:flex; flex-direction:column; justify-content:center; }
+  .hero-right { background:var(--navy); padding:80px 56px; display:flex; flex-direction:column; justify-content:center; }
+  .kicker { font-family:'DM Mono',monospace; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin-bottom:24px; }
+  .hero-co { font-family:'Cormorant Garamond',serif; font-size:13px; letter-spacing:.28em; text-transform:uppercase; color:var(--text-light); margin-bottom:20px; }
+  .hero-h1 { font-family:'Noto Serif JP',serif; font-size:clamp(22px,2.8vw,34px); font-weight:500; line-height:1.6; color:var(--navy); margin-bottom:28px; letter-spacing:.02em; }
+  .hero-sub { font-size:14px; line-height:2; color:var(--text-mid); margin-bottom:40px; max-width:440px; }
+  .meta-row { display:flex; flex-direction:column; gap:8px; }
+  .meta-item { font-family:'DM Mono',monospace; font-size:11px; font-weight:300; letter-spacing:.07em; color:var(--text-light); display:flex; gap:12px; }
+  .meta-lbl { color:var(--gold); min-width:80px; }
+  .toc-lbl { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:28px; opacity:.8; }
+  .toc-list { list-style:none; margin-bottom:52px; }
+  .toc-list li { border-top:1px solid rgba(255,255,255,.08); padding:15px 0; display:flex; gap:16px; align-items:baseline; }
+  .toc-list li:last-child { border-bottom:1px solid rgba(255,255,255,.08); }
+  .toc-num { font-family:'Cormorant Garamond',serif; font-size:11px; color:var(--gold-light); opacity:.7; min-width:22px; }
+  .toc-txt { font-size:13px; color:rgba(249,247,242,.75); letter-spacing:.03em; }
+  .hero-btn { display:block; background:var(--gold); color:var(--white); font-family:'DM Mono',monospace; font-size:13px; letter-spacing:.12em; text-transform:uppercase; padding:17px 28px; text-decoration:none; margin-bottom:16px; text-align:center; transition:background .25s; }
+  .hero-btn:hover { background:var(--gold-light); }
+  .hero-btn-sub { font-size:12px; color:rgba(249,247,242,.6); text-align:center; font-style:italic; letter-spacing:.03em; }
+
+  /* Sections */
+  section { padding:100px 0; }
+  .inner { max-width:1100px; margin:0 auto; padding:0 64px; }
+  .sec-lbl { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.25em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; }
+  .sec-title { font-size:clamp(18px,2vw,24px); font-weight:500; letter-spacing:.03em; line-height:1.65; margin-bottom:48px; }
+
+  /* Section 01 */
+  #s01 { background:var(--white); }
+  .metrics { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); margin-bottom:52px; }
+  .mc { background:var(--white); padding:36px 40px; }
+  .mc.hi { background:var(--navy); }
+  .mc-lbl { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--text-light); margin-bottom:12px; }
+  .mc.hi .mc-lbl { color:rgba(249,247,242,.5); }
+  .mc-val { font-family:'Cormorant Garamond',serif; font-size:clamp(32px,4vw,48px); font-weight:300; color:var(--navy); line-height:1; margin-bottom:10px; }
+  .mc.hi .mc-val { color:var(--gold-light); }
+  .mc-desc { font-size:13px; color:var(--text-mid); line-height:1.65; }
+  .mc.hi .mc-desc { color:rgba(249,247,242,.65); }
+  .s01-lead { max-width:700px; font-size:14px; line-height:2.05; color:var(--text-mid); border-left:2px solid var(--gold); padding-left:28px; }
+
+  /* Section 02 */
+  #s02 { background:var(--navy); }
+  #s02 .sec-lbl { color:var(--gold-light); opacity:.8; }
+  #s02 .sec-title { color:var(--white); }
+  .q-stack { display:flex; flex-direction:column; gap:2px; }
+  .qc { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); padding:44px 48px; transition:background .3s; }
+  .qc:hover { background:rgba(255,255,255,.07); }
+  .q-tag { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-light); margin-bottom:20px; display:inline-block; border:1px solid rgba(160,120,32,.4); padding:5px 11px; }
+  .q-ttl { font-size:clamp(16px,1.8vw,20px); font-weight:500; color:var(--white); margin-bottom:20px; line-height:1.65; letter-spacing:.02em; }
+  .q-body { font-size:14px; color:rgba(249,247,242,.7); line-height:2; max-width:700px; }
+  .q-offtrack { color:rgba(249,247,242,.55); font-style:italic; font-size:13px; margin-top:16px; display:block; }
+  .lock { margin-top:28px; background:rgba(0,0,0,.25); border:1px solid rgba(160,120,32,.25); padding:20px 24px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+  .lock-txt { font-size:13px; color:rgba(249,247,242,.6); font-style:italic; line-height:1.75; }
+  .lock-lnk { font-family:'DM Mono',monospace; font-size:11px; color:var(--gold-light); text-decoration:none; letter-spacing:.1em; white-space:nowrap; border-bottom:1px solid rgba(160,120,32,.4); padding-bottom:2px; transition:color .2s; }
+  .lock-lnk:hover { color:var(--gold-pale); }
+  .q-ttl-dim { font-size:clamp(15px,1.6vw,18px); font-weight:400; color:rgba(249,247,242,.3); margin-bottom:20px; line-height:1.65; letter-spacing:.02em; }
+
+  /* Section 03 */
+  #s03 { background:var(--beige); }
+  .premise-quote { border-left:3px solid var(--gold); padding:28px 36px; background:rgba(160,120,32,.06); margin-bottom:44px; }
+  .premise-quote p { font-size:14px; line-height:2.05; color:var(--text-dark); }
+  .premise-note { font-size:12px; color:var(--text-light); font-style:italic; margin-top:12px; display:block; }
+
+  /* 二択ブロック */
+  .dual-block { background:var(--white); border:1px solid #ccc; border-top:3px solid var(--red); padding:44px 48px; margin-bottom:4px; }
+  .dual-eyebrow { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--red); margin-bottom:16px; }
+  .dual-title { font-size:clamp(17px,1.9vw,22px); font-weight:500; color:var(--navy); line-height:1.65; margin-bottom:24px; letter-spacing:.02em; }
+  .dual-body { font-size:14px; color:var(--text-mid); line-height:2; max-width:700px; margin-bottom:36px; }
+  .dual-grid { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:0; border:1px solid var(--border); }
+  .dual-col { padding:28px 32px; text-align:center; }
+  .dual-col-lbl { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:12px; }
+  .dual-col-txt { font-size:14px; color:var(--text-mid); line-height:1.75; font-weight:500; }
+  .dual-or { font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--text-light); padding:0 16px; opacity:.5; }
+
+  /* 第三の問いボックス */
+  .third-box { background:var(--navy); padding:44px 48px; margin-bottom:4px; }
+  .third-eyebrow { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-light); opacity:.8; margin-bottom:16px; }
+  .third-title { font-size:clamp(17px,1.9vw,22px); font-weight:500; color:var(--white); line-height:1.65; margin-bottom:24px; letter-spacing:.02em; }
+  .third-body { font-size:14px; color:rgba(249,247,242,.7); line-height:2.05; max-width:700px; }
+  .third-body em { color:var(--gold-light); font-style:normal; font-weight:500; }
+
+  /* 焦りを生む締め文 */
+  .urgency-box { background:var(--red-bg); border-left:4px solid var(--red); padding:28px 36px; margin-bottom:52px; }
+  .urgency-box p { font-size:14px; color:#5a1a0e; line-height:2.05; }
+
+  /* 構造図 */
+  .diag { display:grid; grid-template-columns:1fr auto 1fr auto 1fr; align-items:center; border:1px solid var(--border); background:var(--white); margin-bottom:48px; }
+  .diag-node { padding:32px 28px; text-align:center; }
+  .diag-n { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:300; color:var(--gold); display:block; margin-bottom:8px; }
+  .diag-lbl { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-light); display:block; margin-bottom:12px; }
+  .diag-txt { font-size:13px; color:var(--text-mid); line-height:1.7; }
+  .diag-arr { font-size:18px; color:var(--gold); opacity:.5; padding:0 8px; }
+  .s03-lead { font-size:14px; line-height:2.05; color:var(--text-mid); max-width:700px; }
+
+  /* Section 04 */
+  #s04 { background:var(--white); }
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+  .contact-left h2 { font-size:clamp(20px,2.2vw,26px); font-weight:500; line-height:1.65; color:var(--navy); margin-bottom:28px; letter-spacing:.02em; }
+  .contact-lead { font-size:14px; line-height:2; color:var(--text-mid); margin-bottom:36px; }
+  .c-bullets { list-style:none; margin-bottom:40px; }
+  .c-bullets li { padding:13px 0; border-top:1px solid var(--border); font-size:13px; color:var(--text-mid); display:flex; align-items:baseline; gap:12px; line-height:1.75; }
+  .c-bullets li:last-child { border-bottom:1px solid var(--border); }
+  .bmark { color:var(--gold); font-family:'DM Mono',monospace; font-size:11px; min-width:16px; }
+  .info-box { background:var(--beige); border:1px solid var(--border); padding:24px 28px; display:flex; flex-direction:column; gap:10px; }
+  .info-row { display:flex; gap:16px; font-size:13px; color:var(--text-mid); }
+  .info-key { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); min-width:64px; padding-top:2px; }
+  .contact-right { background:var(--navy); padding:48px 44px; }
+
+  /* 一行返信ボックス */
+  .reply-box { border:1px solid rgba(160,120,32,.5); padding:18px 22px; margin-bottom:28px; }
+  .reply-box p { font-size:13px; color:rgba(249,247,242,.75); line-height:1.85; }
+
+  .form-title { font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:28px; opacity:.8; }
+  .fg { margin-bottom:20px; }
+  .fl { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:rgba(249,247,242,.75); display:block; margin-bottom:8px; }
+  .fi,.ft { width:100%; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.13); color:var(--white); font-family:'Noto Serif JP',serif; font-size:14px; padding:13px 15px; outline:none; transition:border-color .2s; appearance:none; -webkit-appearance:none; }
+  .fi:focus,.ft:focus { border-color:rgba(160,120,32,.65); }
+  .fi::placeholder,.ft::placeholder { color:rgba(249,247,242,.28); font-size:13px; }
+  .ft { resize:vertical; min-height:80px; }
+  .fck { display:flex; align-items:center; gap:10px; margin:-4px 0 20px; }
+  .fck input[type=checkbox] { accent-color:var(--gold); width:14px; height:14px; }
+  .fck label { font-size:13px; color:rgba(249,247,242,.7); cursor:pointer; }
+  .fsub { width:100%; background:var(--gold); color:var(--white); font-family:'DM Mono',monospace; font-size:13px; letter-spacing:.14em; text-transform:uppercase; border:none; padding:17px; cursor:pointer; transition:background .25s; margin-top:8px; }
+  .fsub:hover { background:var(--gold-light); }
+  .fnote { font-size:12px; color:rgba(249,247,242,.5); text-align:center; margin-top:16px; font-style:italic; line-height:1.75; }
+
+  /* Overlay */
+  #overlay { display:none; position:fixed; inset:0; background:rgba(26,38,64,.92); z-index:9999; align-items:center; justify-content:center; }
+  #overlay.on { display:flex; }
+  .ov-box { background:var(--white); padding:60px; max-width:480px; text-align:center; }
+  .ov-box h3 { font-size:20px; color:var(--navy); margin-bottom:16px; }
+  .ov-box p { font-size:13px; color:var(--text-mid); line-height:2; margin-bottom:28px; }
+  .ov-close { font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; background:none; border:1px solid var(--gold); color:var(--gold); padding:12px 24px; cursor:pointer; transition:all .25s; }
+  .ov-close:hover { background:var(--gold); color:var(--white); }
+
+  /* Footer */
+  footer { background:var(--navy); padding:36px 80px; display:flex; justify-content:space-between; align-items:center; }
+  .ft-l { font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.12em; color:rgba(249,247,242,.6); }
+  .ft-r { font-size:12px; color:rgba(249,247,242,.5); text-align:right; line-height:1.7; }
+
+  /* Fade */
+  .fi-anim { opacity:0; transform:translateY(24px); transition:opacity .7s ease,transform .7s ease; }
+  .fi-anim.on { opacity:1; transform:translateY(0); }
+
+  /* Responsive */
+  @media(max-width:900px){
+    #hero{grid-template-columns:1fr;}
+    .hero-right{min-height:auto;padding:56px 40px;}
+    .hero-left{padding:80px 36px 60px;}
+    .contact-grid,.dual-grid,.diag{grid-template-columns:1fr;}
+    .metrics{grid-template-columns:1fr;}
+    .dual-or,.diag-arr{transform:rotate(90deg);padding:8px 0;}
+    nav{padding:0 20px;}
+    .inner{padding:0 32px;}
+    footer{flex-direction:column;gap:16px;padding:32px;text-align:center;}
+    .ft-r{text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar" style="width: 0%;"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-left">
+    <span class="nav-brand">Proudfoot Japan</span>
+    <div class="nav-div"></div>
+    <span class="nav-sub">株式会社フジックス｜経営構造診断レポート</span>
+  </div>
+  <a href="file:///C:/Users/USER/Downloads/fujix_lp_v2.html#s04" class="nav-cta">対話を申し込む</a>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-left fi-anim on">
+    <div class="kicker">LIMITSHIFT 30 ── 経営構造診断</div>
+    <div class="hero-co">FUJIX Ltd.</div>
+    <h1 class="hero-h1">「縫い糸の会社」という定義は、<br>今後も有効であり続けるのか。</h1>
+    <p class="hero-sub">御社の中計を拝読し、外部から一つの問いが生まれました。それが正しいのか、的外れなのか――確かめるためにこのページを書きました。</p>
+    <div class="meta-row">
+      <div class="meta-item"><span class="meta-lbl">対象企業</span>株式会社フジックス（3600・東証スタンダード）</div>
+      <div class="meta-item"><span class="meta-lbl">診断基準日</span>2025年3月期（第76期）有価証券報告書</div>
+      <div class="meta-item"><span class="meta-lbl">根拠資料</span>有報・適時開示・Go-Tech事業成果報告書</div>
+    </div>
+  </div>
+  <div class="hero-right fi-anim on">
+    <div class="toc-lbl">Page Contents</div>
+    <ul class="toc-list">
+      <li><span class="toc-num">01</span><span class="toc-txt">外部から見えた数値と、そこから生まれた問い</span></li>
+      <li><span class="toc-num">02</span><span class="toc-txt">外部から見えた3つの問い</span></li>
+      <li><span class="toc-num">03</span><span class="toc-txt">3つの問いに共通して見えていること</span></li>
+      <li><span class="toc-num">04</span><span class="toc-txt">30分の対話を申し込む</span></li>
+    </ul>
+    <a href="file:///C:/Users/USER/Downloads/fujix_lp_v2.html#s04" class="hero-btn">問いが的外れかどうかを、確かめたい →</a>
+    <p class="hero-btn-sub">「違います」という答えも、大切な対話です</p>
+  </div>
+</section>
+
+<!-- Section 01 -->
+<section id="s01">
+  <div class="inner">
+    <div class="sec-lbl fi-anim on">Section 01</div>
+    <h2 class="sec-title fi-anim on">外部から見えた数値と、そこから生まれた問い</h2>
+    <div class="metrics fi-anim on">
+      <div class="mc">
+        <div class="mc-lbl">売上高（2025/3期）</div>
+        <div class="mc-val">56.5<span style="font-size:.45em;margin-left:4px">億円</span></div>
+        <div class="mc-desc">10年CAGRで▲1.74%の減収トレンド継続。市場縮小と並走している。</div>
+      </div>
+      <div class="mc hi">
+        <div class="mc-lbl">経常損失（2025/3期）</div>
+        <div class="mc-val">▲1億<span style="font-size:.45em;margin-left:4px">円</span></div>
+        <div class="mc-desc">4期連続赤字。アジア・国内両セグメントともに黒字化の道筋が見えない。</div>
+      </div>
+      <div class="mc">
+        <div class="mc-lbl">PBR</div>
+        <div class="mc-val">0.24<span style="font-size:.45em;margin-left:4px">倍</span></div>
+        <div class="mc-desc">解散価値の約4分の1。繊維業界平均（0.5〜0.8倍）を大幅に下回る。</div>
+      </div>
+      <div class="mc">
+        <div class="mc-lbl">期末現金残高（2025/3期）</div>
+        <div class="mc-val">17.8<span style="font-size:.45em;margin-left:4px">億円</span></div>
+        <div class="mc-desc">唯一の軍資金。アジア向け設備投資は2023年の5,900万円→2025年に190万円まで圧縮済み。</div>
+      </div>
+    </div>
+    <p class="s01-lead fi-anim on">公開されている数値を並べたとき、一つの問いが生まれました。17.8億円という現金は、「守るためにある」のか、それとも「次の定義を作るためにある」のか。アジア向け設備投資が190万円まで絞られたこの数字は、何を物語っているのでしょうか。外部からは判断できません。でも、問いとして持ち続けています。</p>
+  </div>
+</section>
+
+<!-- Section 02 -->
+<section id="s02">
+  <div class="inner">
+    <div class="sec-lbl fi-anim on">Section 02</div>
+    <h2 class="sec-title fi-anim on">外部から見えた3つの問い</h2>
+    <div class="q-stack">
+
+      <!-- Q1 全文 -->
+      <div class="qc fi-anim on">
+        <div class="q-tag">問い 01 ── 外部からの仮説</div>
+        <div class="q-ttl">「縫い糸を縫製業者に売る」という事業の定義は、<br>今後も有効であり続けるのか。</div>
+        <div class="q-body">
+          中計には「アジアでのシェア拡大」という方向が示されています。それは外部から見ても大切な方向だと理解しています。同時に、外部から一つの問いが浮かびます。Coatsのような世界大手が「品質・価格・調達利便性」という同じ三軸で戦っている市場で、フジックスが構造的に優位に立てる条件は何か――という問いです。<br><br>
+          フジックスには、2017年から国の補助金を活用して開発してきた導電性縫い糸「Smart-X」があります。心電計測の実証まで済ませ、特許も出願している。「縫い糸を縫製業者に売る」ではなく、「Smart-Xを医療・介護・産業安全の素材インフラとして売る」という別の定義が、既に手の届く場所にあるのではないかと感じています。
+          <span class="q-offtrack">これが的外れであれば、ぜひそう教えてください。その答えも、私たちにとっては大切な対話です。</span>
+        </div>
+      </div>
+
+      <!-- Q2 概要 -->
+      <div class="qc fi-anim on">
+        <div class="q-tag">問い 02 ── 概要のみ</div>
+        <div class="q-ttl">Smart-Xの「死の谷」への問い</div>
+        <div class="q-body">確かめたい問いがあります。技術的な実証は完了しているのに、2024年末時点でも「提携先模索中」の状態が続いているのはなぜか。技術の壁ではなく、「誰に・何として売るか」の定義が変わることで局面が開くのではないか、という問いです。</div>
+        <div class="lock">
+          <span class="lock-txt">この問いの詳細と、私たちが考える具体的な3つの前提倒置仮説は、対話の中でお伝えできればと思います。</span>
+          <a href="file:///C:/Users/USER/Downloads/fujix_lp_v2.html#s04" class="lock-lnk">対話の中で確かめる →</a>
+        </div>
+      </div>
+
+      <!-- Q3 存在のみ -->
+      <div class="qc fi-anim on">
+        <div class="q-tag">問い 03 ── 対話の中で</div>
+        <div class="q-ttl-dim">「縫い糸専業」という自己定義は、事業の拡張を助けているのか、それとも制限しているのか。</div>
+        <div class="lock">
+          <span class="lock-txt">外部から見えた中で、最も確信が持てないが、最も気になっている問いです。間違っている可能性も十分あります。それでも一度、対話の中で確かめさせてください。</span>
+          <a href="file:///C:/Users/USER/Downloads/fujix_lp_v2.html#s04" class="lock-lnk">対話を申し込む →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section 03 -->
+<section id="s03">
+  <div class="inner">
+    <div class="sec-lbl fi-anim on">Section 03</div>
+    <h2 class="sec-title fi-anim on">3つの問いに共通して見えていること</h2>
+
+    <!-- 引用ボックス -->
+    <div class="premise-quote fi-anim on">
+      <p>有報の対策群を通読したとき、外部からはこう見えています――「既存の製品・既存の拠点・既存の営業チャネルの範囲内で競争力を磨けば、アジアでのシェアは自然に上がる」という前提のもとで、全ての対策が設計されている。「縫い糸という製品カテゴリーそのものの定義」と「現在の顧客ターゲット」が、疑われることなく前提として置かれている。</p>
+      <span class="premise-note">※ これはあくまで外部からの仮説です。内側からしか見えないことの方が、はるかに多いはずです。</span>
+    </div>
+
+    <!-- ★二択の問いブロック -->
+    <div class="dual-block fi-anim on">
+      <div class="dual-eyebrow">外部から生まれた、もう一つの問い</div>
+      <div class="dual-title">「アジアの工業用縫い糸か、Smart-Xか」――<br>その二択の手前に、別の問いがあるとしたら</div>
+      <p class="dual-body">中計を拝読しながら、ふと思ったことがあります。「アジア市場でのシェア拡大」と「Smart-Xの実用化」――この二つは、それぞれに意味のある方向性です。ただ、もしこの二つが「別々のテーマ」ではなく、ある一つの問いへの、異なるアプローチだとしたら――読んでいて、そんな問いが頭をよぎりました。</p>
+      <div class="dual-grid">
+        <div class="dual-col">
+          <span class="dual-col-lbl">選択肢 A</span>
+          <div class="dual-col-txt">アジア市場での<br>工業用縫い糸シェア拡大</div>
+        </div>
+        <div class="dual-or">または</div>
+        <div class="dual-col">
+          <span class="dual-col-lbl">選択肢 B</span>
+          <div class="dual-col-txt">Smart-Xを起点にした<br>スマートテキスタイル素材事業</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ★第三の問いボックス -->
+    <div class="third-box fi-anim on">
+      <div class="third-eyebrow">外部から見えた手がかり</div>
+      <div class="third-title">もし、「<em>糸そのものの機能的価値を再定義する</em>」ことが問いの本体だとしたら</div>
+      <p class="third-body">
+        Smart-Xが2017年から心電計測の実証まで到達したという事実は、一つの手がかりだと思っています。その背景に何があるのか――外部からは見えません。ただ、もしそこに「再現できる何か」があるとしたら。その何かを言葉にできたとき、アジアでのシェア拡大とSmart-Xの事業化が、同じ問いへの答えとしてつながってくる可能性はないでしょうか。<br><br>
+        この問いへの答えは、御社の内側にしかありません。「どこで、なぜ、自分たちは勝てているのか」――外部からは、ただそれを確かめたくなりました。
+      </p>
+    </div>
+
+    <!-- ★焦りを生む締め文 -->
+    <div class="urgency-box fi-anim on">
+      <p>この問いが的外れであれば、30分の対話で判明します。ただ、もし「その問い、実は自分たちも持っていた」と感じるなら――それが、この対話を申し込む理由になるかもしれません。</p>
+    </div>
+
+    <!-- 構造図 -->
+    <div class="diag fi-anim on">
+      <div class="diag-node">
+        <span class="diag-n">01</span>
+        <span class="diag-lbl">現状の対策</span>
+        <div class="diag-txt">新規販路開拓・拠点合理化・環境対応研究。守り中心の6対策。</div>
+      </div>
+      <div class="diag-arr">→</div>
+      <div class="diag-node">
+        <span class="diag-n">02</span>
+        <span class="diag-lbl">前提としている世界観</span>
+        <div class="diag-txt">「縫い糸×縫製業者」という既存市場の中で磨けばシェアは上がる。</div>
+      </div>
+      <div class="diag-arr">→</div>
+      <div class="diag-node">
+        <span class="diag-n">03</span>
+        <span class="diag-lbl">前提が変わった場合の問い</span>
+        <div class="diag-txt">縫製業者以外の顧客・縫い糸以外の価値定義が、既に手の届く場所にあるとしたら？</div>
+      </div>
+    </div>
+
+    <p class="s03-lead fi-anim on">私たちが確かめたいのは、フジックスの戦略が間違っているかどうかではありません。御社が既にお持ちの問いと、私たちが外部から持ってきた問いが重なるところがあるかどうか――それだけです。答えを持っているのは御社だけです。</p>
+  </div>
+</section>
+
+<!-- Section 04 -->
+<section id="s04">
+  <div class="inner">
+    <div class="sec-lbl fi-anim on">Section 04</div>
+    <div class="contact-grid">
+      <div class="contact-left fi-anim on">
+        <h2>問いが的外れかどうかを、<br>教えてください</h2>
+        <p class="contact-lead">このページに書いたことは、外部公開情報だけから見えたものです。内側からしか見えないことの方が、はるかに多いはずです。「的外れです」という答えも、私たちにとっては大切な対話です。</p>
+        <ul class="c-bullets">
+          <li><span class="bmark">—</span>問い02の詳細と、Smart-Xを起点にした3つの前提倒置仮説</li>
+          <li><span class="bmark">—</span>問い03の正直な開示と、「縫い糸専業」という定義を疑う視点</li>
+          <li><span class="bmark">—</span>「勝ちパターンの発見と展開」という第三の問いを御社の数値で具体化してお伝えします</li>
+          <li><span class="bmark">—</span>御社が既にお持ちかもしれない問いとの重なりを探る時間</li>
+        </ul>
+        <div class="info-box">
+          <div class="info-row"><span class="info-key">所要時間</span>30分（オンライン）</div>
+          <div class="info-row"><span class="info-key">形式</span>Zoom / Google Meet（ご希望に合わせます）</div>
+          <div class="info-row"><span class="info-key">費用</span>無料</div>
+        </div>
+      </div>
+
+      <div class="contact-right fi-anim on">
+        <!-- ★一行返信でもOKボックス -->
+        <div class="reply-box">
+          <p>フォームへの記入が手間でしたら、このメールへの一言返信だけで十分です。「的外れです」も、大切なお返事です。</p>
+        </div>
+
+        <div class="form-title">対話の申し込み</div>
+        <form id="cform" action="https://formspree.io/f/mjgalvdz" method="POST">
+          <div class="fg">
+            <label class="fl">お名前 <span style="color:var(--gold-light)">*</span></label>
+            <input type="text" name="name" class="fi" placeholder="藤井 翔太" required="">
+          </div>
+          <div class="fg">
+            <label class="fl">メールアドレス <span style="color:var(--gold-light)">*</span></label>
+            <input type="email" name="email" class="fi" placeholder="your@fujix.co.jp" required="">
+          </div>
+          <div class="fg">
+            <label class="fl">候補日① <span style="color:var(--gold-light)">*</span></label>
+            <input type="text" name="date1" class="fi" placeholder="例）2025年8月5日（火）10:00〜" required="">
+          </div>
+          <div class="fg">
+            <label class="fl">候補日②</label>
+            <input type="text" name="date2" class="fi" placeholder="例）2025年8月7日（木）15:00〜">
+          </div>
+          <div class="fg">
+            <label class="fl">候補日③</label>
+            <input type="text" name="date3" class="fi" placeholder="例）2025年8月8日（金）14:00〜">
+          </div>
+          <div class="fck">
+            <input type="checkbox" id="ea" name="email_adjust" value="はい">
+            <label for="ea">メールで日程を調整したい</label>
+          </div>
+          <div class="fg">
+            <label class="fl">事前コメント（任意）</label>
+            <textarea name="comment" class="ft" placeholder="問いへのご感想や、既にお持ちの問いがあればお聞かせください"></textarea>
+          </div>
+          <button type="submit" class="fsub">対話を申し込む →</button>
+          <p class="fnote">売り込みではありません。私たちの問いが的外れなら、そう言っていただければ十分です</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="ft-l">Proudfoot Japan ── LIMITSHIFT 30</div>
+  <div class="ft-r">本ページは 株式会社フジックス<br>常務取締役 藤井翔太 様専用の資料です</div>
+</footer>
+
+<!-- Overlay -->
+<div id="overlay">
+  <div class="ov-box">
+    <h3>対話のお申し込みを受け付けました</h3>
+    <p>ご連絡をありがとうございます。<br>Proudfoot Japanの担当者より、2営業日以内にご連絡差し上げます。</p>
+    <button class="ov-close" onclick="document.getElementById(&#39;overlay&#39;).classList.remove(&#39;on&#39;)">閉じる</button>
+  </div>
+</div>
+
+<script>
+  // Progress
+  window.addEventListener('scroll',()=>{
+    const t=document.documentElement.scrollTop;
+    const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    document.getElementById('progress-bar').style.width=(t/h*100)+'%';
+  });
+  // Fade
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){setTimeout(()=>e.target.classList.add('on'),i*80);obs.unobserve(e.target);}
+    });
+  },{threshold:.1});
+  document.querySelectorAll('.fi-anim').forEach(el=>obs.observe(el));
+  // Form
+  document.getElementById('cform').addEventListener('submit',async(e)=>{
+    e.preventDefault();
+    const d=new FormData(e.target);
+    try{
+      const r=await fetch(e.target.action,{method:'POST',body:d,headers:{Accept:'application/json'}});
+      if(r.ok){document.getElementById('overlay').classList.add('on');e.target.reset();}
+    }catch(err){console.error(err);}
+  });
+</script>
+
+
+</body></html>
